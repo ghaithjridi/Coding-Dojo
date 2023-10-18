@@ -27,3 +27,4 @@ if (height>= 42 || age >= 10 )
 {
     console.log("Get on that ride, kiddo!")  
 }
+
