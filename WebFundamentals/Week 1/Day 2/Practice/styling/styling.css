@@ -1,0 +1,25 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h1{
+    background-color: black;
+}
+.bleu{
+    color: aqua;
+}
+.white{
+    color: aliceblue;
+}
+
+h2{
+    text-align: center;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+h3{
+    color: blueviolet;
+    background-color: lightblue;
+    text-align: end;
+    text-decoration: underline;
+}
