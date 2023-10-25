@@ -1,0 +1,53 @@
+.body{
+width:600px;
+height: 400px;
+}
+
+.box1{
+
+    height: 20px;
+    width: 300px;
+    background-color: blue;
+    
+}
+.box2{
+    height: 20px;
+    width: 300px;
+    background-color:white;
+}
+.bloc1{
+    display: flex;
+    
+}
+.topleft,.topright,.bottomleft,.bottomright{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.flex2{
+    display: flex;
+}
+.topright, .bottomright{
+    margin-left: 20px;
+}
+.bottomleft, .bottomright{
+    margin-top: 20px;
+}
+.box3{
+    background-color: blue;
+    width: 200px;
+    height: 20px;
+
+}
+.box4{
+    background-color:white;
+    width: 200px;
+    height: 20px;
+
+}

@@ -1,0 +1,22 @@
+.box1{
+    height: 400px;
+    width: 100px;
+    background-color: black;
+    display: inline-block;
+
+}
+.box2{
+    height: 400px;
+    width: 100px;
+    background-color: yellow;
+display: inline-block;
+margin-left: -5PX;
+}
+.box3{
+    height: 400px;
+    width: 100px;
+    background-color: red;
+    display: inline-block;
+    margin-left: -5PX;
+
+}
