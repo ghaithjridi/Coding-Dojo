@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(78, 78, 78);
+    align-items: center;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    list-style-type: none;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-title {
+    margin-left: 10px;
+    color: white;
+
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    box-shadow: 4px 4px 2px 1px black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.BLOC {
+    width: 50%;
+
+    
+}
+
+.container {
+   
+    width:fit-content
+    margin: 20px;
+    border-style: solid;
+    border-color: grey; 
+}
+
+.bleu {
+    width: 100%;
+    height: 122px;
+    background-color: aqua;
+    justify-content: center;
+    
+
+
+}
+
+.white {
+    margin: 8px;
+    gap: 30px;
+    background-color: white;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 20px;
+
+
+
+}
+
+.image2 {
+    display: flex;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+#A {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 69px;
+    margin-left: 50px;
+    border-radius: 50%;
+
+
+}
+
+.settings {
+    display: flex;
+    gap: 10px;
+    color: blue;
+    text-decoration: underline;
+    align-items: center;
+
+}
+
+h3{
+    width: 377  px;
+    background-color:black;
+    color:gray;
+    
+}
+.BLOC p{
+    margin-left: 20px;
+}
+.BOX1{
+
+    border-style: solid;
+    border-color:  grey;
+    width: auto;
+    
+
+}
+.BLOC span{
+    color: gray;
+}
+
+.X span{
+    background-color: grey;
+    border-radius: 70%;
+
+}
+
+h5{
+    background-color:black;
+    color: aliceblue;
+}
+#friend_name{
+    display: inline;
+    font-weight: bold;
+}
+.Bloc1{
+    width: 200px;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+.X{
+    border: solid grey 2px;
+
+
+}
+.Parent{
+    display: flex;
+    justify-content: space-around;
+    
+  
+}
+.BLOC>*{
+    margin-top: 20px;
+}
+.y span{
+    background-color: grey;
+    border-radius: 70%;
+}
+h6{
+    background-color: black;
+    color: aliceblue;
+}
+.y{
+    
+    width: 210px;
+    border: solid grey 2px;
+    margin-top: 95px;
+}
+p{
+    align-items: center;
+
+}
+p img{
+    width: 40px;
+}
