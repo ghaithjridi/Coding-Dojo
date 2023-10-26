@@ -49,15 +49,23 @@ a {
 .BLOC {
     width: 50%;
 
-    
+
 }
 
 .container {
-   
-    width:fit-content
-    margin: 20px;
+    width: fit-content margin: 20px;
     border-style: solid;
-    border-color: grey; 
+    border-color: grey;
+}
+
+
+
+
+#location {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+
 }
 
 .bleu {
@@ -65,19 +73,16 @@ a {
     height: 122px;
     background-color: aqua;
     justify-content: center;
-    
+
 
 
 }
 
 .white {
-    margin: 8px;
-    gap: 30px;
-    background-color: white;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 20px;
 
+    background-color: white;
+    margin-top: 45px;
+    margin-left: 20px;
 
 
 }
@@ -111,79 +116,129 @@ img {
 
 }
 
-h3{
-    width: 377  px;
-    background-color:black;
-    color:gray;
-    
+.paragraphe {
+    margin-left: -21px;
+
 }
-.BLOC p{
+
+h3 {
+    padding-left: 10px;
+}
+
+.settings img {
+    width: 20px;
+    height: 20px;
+}
+
+h3 {
+    width: 377 px;
+    background-color: black;
+    color: gray;
+
+}
+
+.BLOC p {
     margin-left: 20px;
 }
-.BOX1{
+
+.BOX1 {
 
     border-style: solid;
-    border-color:  grey;
+    border-color: grey;
     width: auto;
-    
+
 
 }
-.BLOC span{
+
+.BLOC span {
     color: gray;
 }
 
-.X span{
+.X span {
     background-color: grey;
     border-radius: 70%;
 
 }
 
-h5{
-    background-color:black;
+h5 {
+    background-color: black;
     color: aliceblue;
 }
-#friend_name{
+
+#friend_name {
     display: inline;
     font-weight: bold;
 }
-.Bloc1{
+
+.Bloc1 {
     width: 200px;
     margin-top: 20px;
     justify-content: space-between;
 
 }
-.X{
+
+.X {
     border: solid grey 2px;
 
 
 }
-.Parent{
+
+.Parent {
     display: flex;
     justify-content: space-around;
-    
-  
+
+
 }
-.BLOC>*{
+
+.BLOC>* {
     margin-top: 20px;
 }
-.y span{
+
+.y span {
     background-color: grey;
     border-radius: 70%;
 }
-h6{
+
+h6 {
     background-color: black;
     color: aliceblue;
 }
-.y{
-    
-    width: 210px;
+
+.y {
+    margin-top: 50px width: 210px;
     border: solid grey 2px;
     margin-top: 95px;
 }
-p{
+
+p {
     align-items: center;
 
 }
-p img{
+
+p img {
     width: 40px;
+}
+
+.X img {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+.y img {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+
+}
+
+.z {
+    width: 182px;
+    height: 45px;
+    background-color: white;
+    border: solid 2px grey;
+    color: blue;
+    text-decoration-line: underline;
+    padding-left: 10px;
+
 }
