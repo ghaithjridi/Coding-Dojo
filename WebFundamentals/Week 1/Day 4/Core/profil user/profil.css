@@ -146,6 +146,7 @@ h3 {
     border-style: solid;
     border-color: grey;
     width: auto;
+    
 
 
 }
@@ -186,7 +187,7 @@ h5 {
 .Parent {
     display: flex;
     justify-content: space-around;
-
+margin-top: 100px;
 
 }
 
