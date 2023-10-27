@@ -13,22 +13,25 @@
 }
 
 .nav-links {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px;
+  margin-right: 100px;
     list-style-type: none;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    
+
 }
 
 a {
     text-decoration: none;
     color: white;
+    justify-content: space-evenly;
 }
 
 .nav-title {
-    margin-left: 10px;
+    margin-left: 100px;
     color: white;
 
 }
@@ -40,6 +43,7 @@ a {
     box-shadow: 4px 4px 2px 1px black;
     color: white;
     font-family: 'Roboto', sans-serif;
+    margin-left: 400px;
 }
 
 .active {
@@ -53,7 +57,7 @@ a {
 }
 
 .container {
-    width: fit-content margin: 20px;
+    
     border-style: solid;
     border-color: grey;
 }
@@ -155,15 +159,26 @@ h3 {
     color: gray;
 }
 
-.X span {
+.title>span {
     background-color: grey;
-    border-radius: 70%;
+    border-radius: 50%;
+    width: 20px;
+    padding-left: 10px;
+    
 
 }
 
-h5 {
+.title {
     background-color: black;
     color: aliceblue;
+    width: 197px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
 }
 
 #friend_name {
@@ -194,19 +209,28 @@ margin-top: 100px;
 .BLOC>* {
     margin-top: 20px;
 }
-
-.y span {
-    background-color: grey;
-    border-radius: 70%;
-}
-
-h6 {
+.title2{
     background-color: black;
     color: aliceblue;
+    width: 210px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.title2 span{
+    background-color: grey;
+    border-radius: 50%;
+    width: 40px;
+    padding-left: 10px;
+}
+
+
+
 .y {
-    margin-top: 50px width: 210px;
+    margin-top: 50px ;
+    width: 210px;
     border: solid grey 2px;
     margin-top: 95px;
 }
@@ -234,7 +258,7 @@ p img {
 }
 
 .z {
-    width: 182px;
+    width: 197px;
     height: 45px;
     background-color: white;
     border: solid 2px grey;
