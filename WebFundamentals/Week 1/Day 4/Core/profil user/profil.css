@@ -52,6 +52,7 @@ a {
 
 .BLOC {
     width: 50%;
+    
 
 
 }
@@ -83,6 +84,7 @@ a {
 }
 
 .white {
+    height: 200px;
 
     background-color: white;
     margin-top: 45px;
@@ -93,6 +95,7 @@ a {
 
 .image2 {
     display: flex;
+    
 }
 
 img {
@@ -106,7 +109,7 @@ img {
     position: relative;
     margin-top: 69px;
     margin-left: 50px;
-    border-radius: 50%;
+    
 
 
 }
@@ -151,6 +154,7 @@ h3 {
     border-color: grey;
     width: auto;
     
+    
 
 
 }
@@ -167,6 +171,19 @@ h3 {
     
 
 }
+.G{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.L{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+
 
 .title {
     background-color: black;
@@ -190,6 +207,7 @@ h3 {
     width: 200px;
     margin-top: 20px;
     justify-content: space-between;
+ 
 
 }
 
