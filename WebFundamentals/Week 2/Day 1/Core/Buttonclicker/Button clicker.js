@@ -3,4 +3,5 @@ function hide(element) {
 }
 function logout(element){
 element.innerText="logout"
+
 }
