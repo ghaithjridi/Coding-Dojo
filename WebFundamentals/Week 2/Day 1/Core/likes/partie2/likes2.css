@@ -1,68 +1,81 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-h1{
+
+h1 {
     background-color: black;
     margin-left: 300px;
-   margin-right: 300px;
-     color: aliceblue;
+    margin-right: 300px;
+    color: aliceblue;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-top: 50px;
 }
 
-.container{
+.container {
     display: flex;
-    margin-left:300px ;
+    margin-left: 300px;
     margin-right: 300px;
-    margin-top:90px ;
+    margin-top: 90px;
 }
-.leftcontainer{
+
+.leftcontainer {
     display: flex;
     justify-content: space-around;
-    flex-direction:column ;
+    flex-direction: column;
     height: 100%;
     padding-left: 50px;
     width: 100px;
     height: 150px;
     border: black solid;
 }
-span{
+
+span {
     color: blue;
     text-decoration: underline;
 }
-img{
+
+img {
     width: 50px;
     height: 50px;
 }
-.title1{
+
+.title1 {
     display: flex;
     justify-content: space-between;
 }
-.rightcontainer1 button{
+
+.rightcontainer1 button {
     background-color: yellow;
     color: black;
     box-shadow: 1px 1px 0px 1px black;
-    
+
 }
-.rightcontainer1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-}
-.rightcontainer{
-    margin-left: 50px;
+
+.rightcontainer1 {
     border: black solid;
-    width: 600px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-bottom: 50px;
+    height: 20px;
+    padding: 40px;
+
 }
-.button1{
-    gap: ;
+
+.rightcontainer {
+
+    margin-left: 20px;
+    width: 400px;
     
+
+
+
+
+}
+
+.button1 {
+    gap: ;
+
     display: flex;
 }
