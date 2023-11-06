@@ -7,6 +7,7 @@ h1 {
     background-color: black;
     margin-left: 300px;
     margin-right: 300px;
+    padding-left: 10px;
     color: aliceblue;
 }
 
@@ -24,13 +25,13 @@ h2 {
 }
 
 .leftcontainer {
+    flex: 1;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 100%;
+    margin-right: 100px;
     padding-left: 50px;
-    width: 100px;
-    height: 150px;
+    height: 200px;
     border: black solid;
 }
 
@@ -59,15 +60,14 @@ button {
 .rightcontainer1 {
     border: black solid;
      margin-bottom: 10px; 
-    
     height: auto;
     padding: 10px;
 
 }
 
 .rightcontainer {
-
-    margin-left: 20px;
+    flex: 2;
+    margin-right: 95px;
     width: 400px;
     height: auto;
 }
