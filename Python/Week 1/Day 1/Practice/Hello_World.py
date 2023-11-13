@@ -12,5 +12,5 @@ print( 'Hello', + str(42) )	# with a +	-- this one should give us an error!
 fave_food1 = "sushi"
 fave_food2 = "pizza"
 print( 'I love eat {}'.format(fave_food1,fave_food2) ) # with .format()
-print( f'I love eat {fave_food1}' ) # with an f string
+print( f'I love eat {fave_fo}' ) # with an f string
 
