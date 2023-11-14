@@ -25,7 +25,8 @@
 
 
 def values_greater_than_second(arr):
-    if (len(arr1)) > 
+    if (len(arr)) < 2 :
+        return (False)
     arr1=[]
     for i in arr:
         if arr[i]>arr[1]:
