@@ -12,8 +12,11 @@
 
 # x = [ [5,2,3], [10,8,9] ] 
 # x[1][0]=15
+
 # (students[0]['last_name'])="bryant"
+
 # (sports_directory['soccer'][1])="andres"
+
 # z [0]['y']=30
 
 
