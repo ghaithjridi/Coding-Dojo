@@ -45,13 +45,13 @@ class User:
     
     def make_deposit(self, amount):
         self.account.deposit(amount)
-            return self
+        return self
         
     def  make_withdraw(self, amount):
         self.account.withdraw(amount)
         
-    def displya_user_balance(self , amount):
-        self.account.display_account_info(amount)
+    def displya_user_balance(self):
+        self.account.display_account_info()
         
     
 
