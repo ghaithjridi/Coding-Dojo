@@ -8,6 +8,7 @@ class Ninja:
     
     def walk(self):
         self.pet.play()
+        
     def feed(self):
         self.pet.eat()
         
@@ -16,7 +17,7 @@ class Ninja:
     
     
     
-            
+
     
 class Pet:
     def __init__(self,name,type,tricks,health,energy):
@@ -27,10 +28,18 @@ class Pet:
         self.energy=energy
     
     def sleep(self):
-        pass
+        self.energy+=25
     def eat(self):
-        self.health=self.health+5
+        self.health += 10 
+        self.energy+=5
     def play(self):
-        pass
+        self.health += 10
+        print(f"{self.name} health is now {self.health}")
+    
     def noise(self):
-        pass
+        print("meow")
+wanda = Pet("wanda","dog","jump",100,100)
+ghaith=Ninja("ghaith","jridi","Kind","fish",wanda)
+
+ghaith.walk()
+wanda.noise()
