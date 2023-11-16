@@ -13,6 +13,7 @@ class User:
     def enroll(self):
         self.is_rewards_member = True
         self.gold_card_points = 200
+        print("dqsdqs")
     def spend_points(self, amount):
         self.gold_card_points-=amount
         
