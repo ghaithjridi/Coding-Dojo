@@ -7,14 +7,14 @@ app.secret_key='lkjhfdfsdfs'
 def index():
     if 'count' not in session:
         session['count']=0
-    session['count']+=1
+    
     return render_template("index.html", count= session['count'])
 
 @app.route('/destroy_session')
 
-def addtwo():
+def add():
     session['count']+=2
-    return redirect('/')
+    return render_template("index.html", count= session['count'])
         
 @app.route('/reset')
 def reset():
