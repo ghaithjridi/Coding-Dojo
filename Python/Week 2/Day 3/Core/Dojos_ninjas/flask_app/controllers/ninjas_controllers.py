@@ -14,9 +14,17 @@ def create_movie():
     data={
         "first_name":request.form['first_name'],
         "last_name" :request.form['last_name'],
-        "dojo_id":request.form['filmmaker_id']
+        "dojo_id":request.form['dojo_id']
     }
     Ninja.save(data)
     return redirect('/ninjas')
+
+@app.route("/ninja/<int:ninja_id>")
+def show_ninja(ninja_id):
+    data = {"id": ninja_id}
+    ninja = Ninja.get_by_id(data)
+    data2 = {"id": ninja.dojos_id_id}
+    dojo = Dojo.get_by_id(data2)
+    return render_template("movie.html", ninja=ninja, dojo=dojo)
 
 

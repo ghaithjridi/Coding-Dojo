@@ -4,7 +4,7 @@ from flask_app.models import dojos_models
 
 
 
-DATABASE = "users_schema"
+DATABASE = "dojos_ninjas_schema"
 
 
 class Ninja:
@@ -23,26 +23,26 @@ class Ninja:
     def get_all(cls):
         query="SELECT * FROM ninjas;"  
         ninjas = []
-        results = connectToMySQL ('DATABASE').query_db(query)  
+        results = connectToMySQL (DATABASE).query_db(query)  
         for row in results:
             ninjas.append(cls(row))
         return ninjas
     @classmethod
     def save(cls,data):
-        query = "INSERT INTO Dojo (first_name,last_name,email,dojos_id) VALUES (%(first_name)s,%(last_name)s,%(dojos_id)s);"
-        return connectToMySQL ('DATABASE').query_db(query,data) 
+        query = "INSERT INTO Ninja (first_name,last_name,dojos_id) VALUES (%(first_name)s,%(last_name)s,%(dojos_id)s);"
+        return connectToMySQL (DATABASE).query_db(query,data) 
     
     @classmethod
     def get_by_id(cls,data):
         query = "SELECT * FROM ninjas WHERE ninjas.id=(%(id)s);"
-        result=connectToMySQL ('DATABASE').query_db(query,data)  
+        result=connectToMySQL (DATABASE).query_db(query,data)  
         return cls(result[0])
         
     @classmethod
     def get_by_filmmaker_id(cls,data):
         query ="SELECT * FROM ninjas WHERE dojos_id=%(id)s;"
         ninjas = []
-        results = connectToMySQL ('DATABASE').query_db(query,data)  
+        results = connectToMySQL (DATABASE).query_db(query,data)  
         for row in results:
             ninjas.append(cls(row))
         return ninjas

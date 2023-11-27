@@ -24,12 +24,12 @@ class Dojo:
     @classmethod
     def save(cls,data):
         query = "INSERT INTO dojos (name) VALUES (%(name)s);"
-        return connectToMySQL ('DATABASE').query_db(query,data) 
+        return connectToMySQL (DATABASE).query_db(query,data) 
     
     @classmethod
     def get_by_id(cls,data):
         query = "SELECT * FROM dojos WHERE id=(%(id)s);"
-        result=connectToMySQL ('DATABASE').query_db(query,data)  
+        result=connectToMySQL (DATABASE).query_db(query,data)  
         return cls(result[0])
     
     
