@@ -19,10 +19,10 @@ def create_dojos():
     return redirect('/dojos')
 
 @app.route('/dojos/<int:id>')
-def show_filmmaker(id):
+def show_dojo(id):
     data={
         "id":id
     }
-    return render_template('show_dojo.html',dojo=dojos_models.Dojo.get_by_id(data),ninja= ninjas_models.Ninja.get_by_id(data))
+    return render_template('dojos.html',dojo=dojos_models.Dojo.get_by_id(data),ninja= ninjas_models.Ninja.get_by_id(data))
 
 

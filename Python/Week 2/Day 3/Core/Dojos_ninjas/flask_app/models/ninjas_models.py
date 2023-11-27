@@ -12,7 +12,6 @@ class Ninja:
         self.id = data["id"]
         self.first_name = data["first_name"]
         self.last_name = data["last_name"]
-        self.email = data["email"]
         self.dojos_id=data["dojos_id"]
         self.created_at = data["created_at"]
         self.updated_at = data["updated_at"]
@@ -29,7 +28,7 @@ class Ninja:
         return ninjas
     @classmethod
     def save(cls,data):
-        query = "INSERT INTO Ninja (first_name,last_name,dojos_id) VALUES (%(first_name)s,%(last_name)s,%(dojos_id)s);"
+        query = "INSERT INTO ninjas (first_name,last_name,age,dojos_id) VALUES (%(first_name)s,%(last_name)s,%(age)s,%(dojos_id)s);"
         return connectToMySQL (DATABASE).query_db(query,data) 
     
     @classmethod
@@ -38,11 +37,4 @@ class Ninja:
         result=connectToMySQL (DATABASE).query_db(query,data)  
         return cls(result[0])
         
-    @classmethod
-    def get_by_filmmaker_id(cls,data):
-        query ="SELECT * FROM ninjas WHERE dojos_id=%(id)s;"
-        ninjas = []
-        results = connectToMySQL (DATABASE).query_db(query,data)  
-        for row in results:
-            ninjas.append(cls(row))
-        return ninjas
+    
