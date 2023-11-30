@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            margin: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .btn-custom {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Welcome, {{user.first_name}}</h2>
+        <div>
+            <a href="/dashboard" class="btn btn-dark btn-custom">Back to Recipes</a>
+            <a href="/logout" class="btn btn-dark btn-custom">LOGOUT</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="d-flex justify-content-between mb-4">
+            <h1>{{recipe.name}}</h1>
+            <h4>Posted by: {{recipe.poster}}</h4>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Description:</div>
+            <div class="col-8">{{recipe.description}}</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Under 30 Minutes?</div>
+            <div class="col-8">
+                {% if recipe.under == 1 %}Yes
+                {% else %}
+                No
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Instructions:</div>
+            <div class="col-8">{{recipe.instructions}}</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Date Made:</div>
+            <div class="col-8">{{recipe.date}}</div>
+        </div>
+    </div>
+</body>
+
+</html>
