@@ -1,19 +1,26 @@
-from flask import Flask  
-app = Flask(__name__)    
-@app.route('/')          
-def hello_world():
-    return 'Hello ghaith!'
-@app.route('/Dojo')
-def success():
-    return "dojo!"
-@app.route('/Say/<Flask>')
-def say1(Flask):
-    return  f"Hi {Flask}!"
-@app.route('/repeat/<string:hello>/<int:num>/')
-def hello2(hello,num):
-    return f"{hello} {num} times"
+from flask import Flask, render_template, session, redirect,request
+import random
 
+app = Flask(__name__)
 
-if __name__=="__main__":      
-    app.run(debug=True)    
+app.secret_key="Benny bob wuz heer."
 
+@app.route('/')
+def index():
+    if "num" not in session:
+        session['num'] = random.randint(1,100)
+
+    return render_template("index.html")
+
+@app.route('/guess',methods=['POST'])
+def guess():
+    session['guess'] = int(request.form['guess'])
+    return redirect('/')
+
+@app.route('/reset')
+def reset():
+    session.clear()
+    return redirect('/')
+
+if __name__=="__main__":
+    app.run(debug=True)
