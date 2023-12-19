@@ -1,6 +1,5 @@
-// parent Vehicle class
 class Ninja {
-    constructor(name, health, speed, strength) {
+    constructor(name) {
         this.name = name;
         this.health = 100;
         this.speed = 3;
@@ -20,10 +19,25 @@ class Ninja {
     }
 
 
-    
+
 
 }
-const ninja1 = new Ninja("ghaith");
-ninja1.sayName();
-ninja1.showStats();
+// child 
+class Sensei extends Ninja {
+    constructor(name) {
+        super(name);
+        this.health = 200;
+        this.speed = 10;
+        this.strength = 10;
+        this.wisdom = 10;
+    }
 
+    speakWisdom() {
+        super.drinkSake;
+
+
+
+        console.log(`${this.wisdom}What one programmer can do in one month, two programmers can do in two months.`);
+        return this
+    }
+}
