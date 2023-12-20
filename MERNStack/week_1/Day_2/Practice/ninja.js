@@ -1,6 +1,6 @@
 // parent Vehicle class
 class Ninja {
-    constructor(name, health, speed, strength) {
+    constructor(name) {
         this.name = name;
         this.health = 100;
         this.speed = 3;
