@@ -29,18 +29,14 @@ const pokemon = Object.freeze([
 
 // const pkmnIds = pokemon.filter((poke) => {
 //     return poke.id % 3 === 0
-// }).map((p) => {
-//     return `${p.id}`
-// });
+// })
 // console.log(pkmnIds);
 
 // const newPoke = pokemon
 //     .filter((poke) => {
-//         return poke.types[0] === "fire";
+//         return poke.types.includes === "fire";
 //     })
-//     .map((p) => {
-//         return `${p.name}'s first type is ${p.types[0]}`;
-//     });
+//     
 
 // console.log(newPoke);
 
@@ -72,5 +68,8 @@ const pokemon = Object.freeze([
 
 // console.log(newPoke);
 
-const my_pokemon_name_type = pokemon.filter(p => p.types == "poison").map(p => p.name);
-console.log(my_pokemon_name_type);
+const flying=pokemon.filter(el=>el.types[1]==="flying").map(p=>p.types[0])
+console.log(flying);
+
+const normal=pokemon.filter(p=>p.types.includes("normal")).length
+console.log(normal);
