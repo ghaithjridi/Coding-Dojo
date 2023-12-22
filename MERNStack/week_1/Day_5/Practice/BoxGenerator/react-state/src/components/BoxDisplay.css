@@ -1,0 +1,21 @@
+.morta{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+
+}
+.walid{
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+}
+.amen{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+.ghaith{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+}
