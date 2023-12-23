@@ -12,7 +12,9 @@ function App() {
     setData(content);
   }
   return (
+    
     <div className="App">
+    
 
       <Tabs/>
       <TabsDisplay data={newContent}/>

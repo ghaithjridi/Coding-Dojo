@@ -9,6 +9,7 @@ const Tabs = () => {
         setMsg(y + "showing here");
     }
 return (
+<fieldset>
     <div>
     { tab.map((value,i)=>{
         return <button   key={i} onClick={(e)=> clickhandler(e,value,i)}>{value}</button>
@@ -17,6 +18,7 @@ return (
     <p>{msg}</p>
 
     </div>
+    </fieldset>
 )
 }
 
