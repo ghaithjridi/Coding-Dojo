@@ -18,9 +18,9 @@ const Form = (props) => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="task">Add a task here:</label>
+                <label htmlFor="">Add a task here:</label>
                 <input type="text" />
-                <form type="text" name="task" id="task" onChange={onChange} value={form.text} />
+                <form type="text"  onChange={onChange} value={form.text} />
                 <button>Add Task</button>
             </form>
         </>
