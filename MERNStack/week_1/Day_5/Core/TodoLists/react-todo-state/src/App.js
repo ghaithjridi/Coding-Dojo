@@ -7,11 +7,11 @@ function App() {
   const [tasks, setTasks] = useState([]);
   return (
     <>
-      <Form tasks={tasks} setTasks={setTasks} />
+      <Form tasks={tasks} addTasks={setTasks} />
       <ul>
         {tasks.map((task, idx) => {
           return (<li key={idx}>
-            <Tasks value={idx} task={task} tasks={tasks} setTasks={setTasks} /> 
+            <Tasks value={idx} task={task} tasks={tasks} setNewTasks={setTasks} />
             </li>);
         })}
       </ul>

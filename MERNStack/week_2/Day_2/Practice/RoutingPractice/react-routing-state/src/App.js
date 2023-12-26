@@ -16,7 +16,7 @@ function App() {
       
       <Routes>
       <Route path="/home" element={<Home/>} />
-      <Route path="/:word" element={<Color/>} />
+      
       <Route path="/:word/:color1/:color2" element={<Color/>} />
 
       </Routes>
