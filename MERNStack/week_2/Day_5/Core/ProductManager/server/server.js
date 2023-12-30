@@ -9,7 +9,7 @@ app.use(express.json(), express.urlencoded({ extended: true }), cors());
 // grab the config
 require("./config/mongoose.config");
 // grab the routes
-require("./routes/Products.routes")(app)
+require("./routes/Products.routes")(app);
 
 app.listen(port, () => {
 console.log("🚀🚀 Listenning to port " + port);

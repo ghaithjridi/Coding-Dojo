@@ -32,7 +32,7 @@ module.exports.createNewProduct = (req, res) => {
 // UPDATE
 
 module.exports.updateExisitingProduct = (req, res) => {
-    Movie.findOneAndUpdate({ _id: req.params.id }, req.body, {
+    Product.findOneAndUpdate({ _id: req.params.id }, req.body, {
     new: true,
     runValidators: true,
     })
@@ -44,7 +44,7 @@ module.exports.updateExisitingProduct = (req, res) => {
 
 // DELETE
 module.exports.deleteOneProduct = (req, res) => {
-    Movie.deleteOne({ _id: req.params.id })
+    Product.deleteOne({ _id: req.params.id })
     .then((result) => {
         res.json(result);
     })
